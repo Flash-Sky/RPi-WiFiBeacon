@@ -5,7 +5,7 @@ import requests
 import time
 
 home = 0
-address = "192.168.1.143"
+address = "10.5.5.108"
 y = 'y'
 
 while y == 'y':
@@ -13,8 +13,8 @@ while y == 'y':
     if response == 0:
         print address, 'is up!'
         if (home == 0):
-            res = requests.post('Insert HTTPS Post Here', data='')
-            print res
+            #res = requests.post('Insert HTTPS Post Here', data='')
+            #print res
             home = 1
             print home
             time.sleep(1800)
